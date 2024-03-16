@@ -26,7 +26,7 @@ public class Lecture extends People {
     }
 
     public void viewTaughtCourses() {
-        System.out.println("Matakuliah yang diampu oleh : " + getName() + ":");
+        System.out.println("Matakuliah yang diampu oleh : " + super.getName() + ":");
         for (Course course : coursesTaught) {
             course.getDetails();
         }
