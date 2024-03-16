@@ -26,7 +26,7 @@ public class Student extends People{
     }
     
     public void viewEnrolledCourses() {
-        System.out.println("Matakuliah yang diambil oleh " + getName() + ":");
+        System.out.println("Matakuliah yang diambil oleh " + super.getName() + ":");
         for (Course c : coursesEnrolled) {
             c.getDetails();
         }
